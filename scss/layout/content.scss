@@ -15,3 +15,13 @@
         font-size: 14px;
     }
 }
+
+// section-2
+.statistics {
+    @include box-size (50%);
+    @extend %margin-lr;
+
+    &__item:first-child {
+        margin-bottom: 97px;
+    }
+}

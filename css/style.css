@@ -30,7 +30,7 @@
   display: inline-block;
 }
 
-.intro, .navbar {
+.statistics, .intro, .navbar {
   margin-left: auto;
   margin-right: auto;
 }
@@ -409,6 +409,14 @@ img {
   font-size: 14px;
 }
 
+.statistics {
+  width: 50%;
+  height: 100%;
+}
+.statistics__item:first-child {
+  margin-bottom: 97px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -472,6 +480,22 @@ img {
 }
 .navbar__logo {
   width: 6rem;
+}
+
+.statistics__item-icon {
+  margin: 0 0 4px 0;
+}
+.statistics__item-icon img {
+  width: 30px;
+}
+.statistics__item-number {
+  font-size: 3.8rem;
+  margin: 0 0 14px 0;
+  font-weight: 700;
+}
+.statistics__item-caption {
+  color: #808080;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
