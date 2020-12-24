@@ -35,6 +35,10 @@
   margin-right: auto;
 }
 
+.newsletter__form {
+  text-align: right;
+}
+
 .cta, .workflow__item-wrapper, .intro {
   text-align: center;
 }
@@ -392,6 +396,11 @@ img {
   width: 100%;
 }
 
+footer {
+  background-color: #00252e;
+  color: #f5faff;
+}
+
 .navbar {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
@@ -425,6 +434,23 @@ img {
 .cta {
   width: 85%;
   height: 100%;
+}
+
+.newsletter {
+  line-height: 1.5;
+}
+.newsletter__subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+.newsletter__paragraph {
+  font-size: 14px;
+  margin-bottom: 2.1rem;
+}
+.newsletter__form-input {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .attribution {
@@ -534,6 +560,14 @@ img {
 .cta__subtitle {
   margin-top: 0;
   margin-bottom: 2.6rem;
+}
+
+.newsletter__form-input {
+  font-size: 15px;
+  padding: 14px 44px;
+  border-radius: 6px;
+  border-style: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
