@@ -18,7 +18,7 @@
   src: url("../fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
 }
-.workflow__item-subtitle, .intro__title {
+.cta__subtitle, .workflow__item-subtitle, .intro__title {
   font-family: "Poppins";
   font-weight: 700;
 }
@@ -30,12 +30,12 @@
   display: inline-block;
 }
 
-.workflow__item-illustration, .workflow__item-wrapper, .statistics, .intro, .navbar {
+.workflow__item-illustration, .cta, .workflow__item-wrapper, .statistics, .intro, .navbar {
   margin-left: auto;
   margin-right: auto;
 }
 
-.workflow__item-wrapper, .intro {
+.cta, .workflow__item-wrapper, .intro {
   text-align: center;
 }
 
@@ -422,6 +422,11 @@ img {
   height: 100%;
 }
 
+.cta {
+  width: 85%;
+  height: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -521,6 +526,14 @@ img {
 }
 .workflow__item-paragraph {
   font-size: 14px;
+}
+
+.cta {
+  line-height: 1.5;
+}
+.cta__subtitle {
+  margin-top: 0;
+  margin-bottom: 2.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -34,3 +34,10 @@
         @extend %text-align-center;
     }
 }
+
+// section-4
+.cta {
+    @include box-size (85%);
+    @extend %margin-lr;
+    @extend %text-align-center;
+}
