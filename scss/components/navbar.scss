@@ -1,0 +1,8 @@
+.navbar {
+    @include flex (row, no-wrap, space-between, center);
+    @include box-size (85%, auto);
+    
+    &__logo {
+        width: 6rem;
+    }
+}

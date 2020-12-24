@@ -1,0 +1,18 @@
+.button {
+    @include button (12px, 12px, 38px, 20px);
+    background-color: $pink;
+    color: $very-pale-blue;
+}
+
+.button--secondary {
+    @include button (10px, 5px, 14px, 14px);
+    color: $light-pink;
+    border: 1px solid;
+}
+
+.button--tertiary {
+    @include button (15px, 15px, 44px, 6px);
+    background-color: $pink;
+    color: $very-pale-blue;
+    border-style: none;
+}
