@@ -1,0 +1,17 @@
+// section-1
+.intro {
+    @include box-size (80%);
+    @extend %margin-lr;
+    @extend %text-align-center;
+    line-height: 1.5;
+
+    &__title {
+        font-size: 1.5rem;
+        @extend %heading;
+    }
+
+    &__paragraph {
+        // creo que debería estar por defecto en element
+        font-size: 14px;
+    }
+}
