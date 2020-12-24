@@ -6,12 +6,12 @@
     line-height: 1.5;
 
     &__title {
-        font-size: 1.5rem;
         @extend %heading;
+        font-size: 1.5rem;
     }
 
     &__paragraph {
-        // creo que debería estar por defecto en element
+        // element??
         font-size: 14px;
     }
 }
@@ -23,5 +23,14 @@
 
     &__item:first-child {
         margin-bottom: 97px;
+    }
+}
+
+// section-3
+.workflow__item {
+    &-wrapper {
+        @include box-size (85%);
+        @extend %margin-lr;
+        @extend %text-align-center;
     }
 }

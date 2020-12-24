@@ -1,0 +1,27 @@
+.workflow__item {
+    &:nth-child(odd) {
+        background-color: $very-pale-blue;
+    }
+
+    &-wrapper {
+        line-height: 1.5;
+    }
+
+    &-illustration {
+        @include box-size (81%);
+        @extend %margin-lr;
+        margin-bottom: 4.25rem;
+    }
+
+    &-subtitle {
+        @extend %heading;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 1.3rem;
+    }
+
+    &-paragraph {
+        // element??
+        font-size: 14px;
+    }
+}
