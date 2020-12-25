@@ -402,20 +402,26 @@ footer {
 }
 
 .navbar {
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
 }
 
 .intro {
   width: 80%;
   height: 100%;
   line-height: 1.5;
+  margin-bottom: 7.3rem;
 }
 .intro__title {
   font-size: 1.5rem;
+  margin-bottom: 1.4rem;
 }
 .intro__paragraph {
   font-size: 14px;
+  margin-bottom: 3rem;
+}
+.intro__button {
+  margin-bottom: 6.2rem;
 }
 
 .statistics {
@@ -547,6 +553,9 @@ footer {
   width: 6rem;
 }
 
+.statistics__item {
+  margin-bottom: 1.7rem;
+}
 .statistics__item-icon {
   margin: 0 0 4px 0;
 }
@@ -557,6 +566,19 @@ footer {
   font-size: 3.8rem;
   margin: 0 0 14px 0;
   font-weight: 700;
+}
+.statistics__item-number:last-of-type {
+  font-size: 3rem;
+}
+.statistics__item:nth-child(2) .statistics__icon {
+  margin-bottom: 0;
+}
+.statistics__item:nth-child(2) .statistics__item-number {
+  font-size: 3.4rem;
+  margin-bottom: 12px;
+}
+.statistics__item:nth-child(2) .statistics__item-caption {
+  margin-top: 0;
 }
 .statistics__item-caption {
   color: #808080;
