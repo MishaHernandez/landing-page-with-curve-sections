@@ -486,6 +486,7 @@ footer {
 .cta {
   width: 85%;
   height: 100%;
+  margin-bottom: 15.7rem;
 }
 
 .info__paragraph {
@@ -653,7 +654,7 @@ footer {
 }
 .cta__subtitle {
   margin-top: 0;
-  margin-bottom: 2.6rem;
+  margin-bottom: 2.3rem;
 }
 
 .newsletter__form-input {
