@@ -11,11 +11,15 @@
 @import 'layout/breakpoints';
 @import 'layout/header';
 @import 'layout/content';
-@import 'layout/attribution';
+@import 'layout/footer';
 
 @import 'components/button';
 @import 'components/navbar';
-@import 'components/statistics-item.scss';
-@import 'components/workflow-item.scss';
-@import 'components/call-to-action.scss';
-@import 'components/input.scss';
+@import 'components/statistics-item';
+@import 'components/workflow-item';
+@import 'components/call-to-action';
+@import 'components/input';
+@import 'components/footer-info';
+@import 'components/newsletter';
+@import 'components/socialbar';
+@import 'components/attribution';
