@@ -44,6 +44,15 @@
     @extend %margin-lr;
     margin-bottom: 1.5rem;
 
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        @include box-size (61%);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     &__item:first-child {
         margin-bottom: 97px;
     }
