@@ -41,55 +41,56 @@
 
     margin-bottom: 3.4rem;
 
-    &::before {
-        content: "";
-        display: block;
-        height: 7rem;
-        background: url('../images/bg-section-top-mobile-1.svg') no-repeat 100% top;
-    }
-    &::after {
-        content: "";
-        display: block;
-        height: 7rem;
-        background: url('../images/bg-section-bottom-mobile-2.svg') no-repeat 100% top;
-    }
-}
-.workflow__item {
-    &:nth-child(1) {
-        padding-top: 5.15rem;
-        padding-bottom: 2.6rem;
-    }
-    &:nth-child(2) {
-        &::before {
-            content: "";
-            display: block;
+    &__wave {
+        &:nth-child(1) {
+            height: 7rem;
+            background: url("../images/bg-section-top-mobile-1.svg") no-repeat 100% / 100% 100%;
+        }
+        &:nth-child(3) {
             height: 50px;
-            background: url('../images/bg-section-bottom-mobile-1.svg') no-repeat 100% top;
+            background: url("../images/bg-section-bottom-mobile-1.svg") no-repeat 100% / 100% 100%;
         }
-        .workflow__item {
-            &-wrapper {
-                margin-top: 8.7rem;
-                margin-bottom: 7.3rem;
-            }
-            &-illustration {
-                margin-bottom: 5.3rem
-            }
-        }
-        &::after {
-            content: "";
-            display: block;
+        &:nth-child(5) {
             height: 100px;
-            background: url('../images/bg-section-top-mobile-2.svg') no-repeat 100% top;
+            background: url("../images/bg-section-top-mobile-2.svg") no-repeat 100% / 100% 100%;
+        }
+        &:nth-child(7) {
+            height: 100px;
+            background: url("../images/bg-section-bottom-mobile-2.svg") no-repeat 100% / 100% 100%;
         }
     }
-    &:nth-child(3) {
-        padding-top: 1.2rem;
-        padding-bottom: 6.4rem;
-    }
-    &-wrapper {
-        @include box-size (85%);
-        @extend %margin-lr;
-        @extend %text-align-center;
+
+    &__item {
+        &:nth-child(2) {
+            padding-top: 5.15rem;
+            padding-bottom: 2.6rem;
+            background-color: $very-pale-blue;
+        }
+
+        &:nth-child(4) {
+            .workflow__item {
+                &-wrapper {
+                    margin-top: 8.7rem;
+                    margin-bottom: 7.3rem;
+                }
+
+                &-illustration {
+                    margin-bottom: 5.3rem
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            padding-top: 1.2rem;
+            padding-bottom: 6.4rem;
+            background-color: $very-pale-blue;
+        }
+
+        &-wrapper {
+            @include box-size (85%);
+            @extend %margin-lr;
+            @extend %text-align-center;
+        }
     }
 }
 
@@ -97,6 +98,5 @@
 .cta {
     @include box-size (85%);
     @extend %margin-lr;
-    @extend %text-align-center;
-    margin-bottom: 18.9rem;
+    margin-bottom: 15.7rem;
 }

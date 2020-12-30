@@ -15,17 +15,4 @@ footer {
     display: grid;
     grid-template-columns: 86%;
     justify-content: center;
-
-    position: relative;
-
-    &::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 52px;
-        background: url('../images/bg-footer-top-mobile.svg') no-repeat 100% top;
-        position: absolute;
-        top: -52px;
-        z-index: 100;
-    }
 }

@@ -1,8 +1,11 @@
 .navbar {
-    @include flex (row, no-wrap, space-between, center);
+    @include flex (row, nowrap, space-between, center);
     @include box-size (85%, auto);
+    pointer-events: none;
     
     &__logo {
         width: 6rem;
+
+        img { vertical-align: middle; }
     }
 }

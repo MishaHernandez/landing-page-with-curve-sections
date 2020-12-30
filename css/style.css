@@ -402,17 +402,6 @@ footer {
   display: grid;
   grid-template-columns: 86%;
   justify-content: center;
-  position: relative;
-}
-footer::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 52px;
-  background: url("../images/bg-footer-top-mobile.svg") no-repeat 100% top;
-  position: absolute;
-  top: -52px;
-  z-index: 100;
 }
 
 .navbar {
@@ -452,45 +441,38 @@ footer::before {
   flex-direction: column;
   margin-bottom: 3.4rem;
 }
-.workflow::before {
-  content: "";
-  display: block;
+.workflow__wave:nth-child(1) {
   height: 7rem;
-  background: url("../images/bg-section-top-mobile-1.svg") no-repeat 100% top;
+  background: url("../images/bg-section-top-mobile-1.svg") no-repeat 100%/100% 100%;
 }
-.workflow::after {
-  content: "";
-  display: block;
-  height: 7rem;
-  background: url("../images/bg-section-bottom-mobile-2.svg") no-repeat 100% top;
+.workflow__wave:nth-child(3) {
+  height: 50px;
+  background: url("../images/bg-section-bottom-mobile-1.svg") no-repeat 100%/100% 100%;
 }
-
-.workflow__item:nth-child(1) {
+.workflow__wave:nth-child(5) {
+  height: 100px;
+  background: url("../images/bg-section-top-mobile-2.svg") no-repeat 100%/100% 100%;
+}
+.workflow__wave:nth-child(7) {
+  height: 100px;
+  background: url("../images/bg-section-bottom-mobile-2.svg") no-repeat 100%/100% 100%;
+}
+.workflow__item:nth-child(2) {
   padding-top: 5.15rem;
   padding-bottom: 2.6rem;
+  background-color: #f5faff;
 }
-.workflow__item:nth-child(2)::before {
-  content: "";
-  display: block;
-  height: 50px;
-  background: url("../images/bg-section-bottom-mobile-1.svg") no-repeat 100% top;
-}
-.workflow__item:nth-child(2) .workflow__item-wrapper {
+.workflow__item:nth-child(4) .workflow__item-wrapper {
   margin-top: 8.7rem;
   margin-bottom: 7.3rem;
 }
-.workflow__item:nth-child(2) .workflow__item-illustration {
+.workflow__item:nth-child(4) .workflow__item-illustration {
   margin-bottom: 5.3rem;
 }
-.workflow__item:nth-child(2)::after {
-  content: "";
-  display: block;
-  height: 100px;
-  background: url("../images/bg-section-top-mobile-2.svg") no-repeat 100% top;
-}
-.workflow__item:nth-child(3) {
+.workflow__item:nth-child(6) {
   padding-top: 1.2rem;
   padding-bottom: 6.4rem;
+  background-color: #f5faff;
 }
 .workflow__item-wrapper {
   width: 85%;
@@ -500,7 +482,12 @@ footer::before {
 .cta {
   width: 85%;
   height: 100%;
-  margin-bottom: 18.9rem;
+  margin-bottom: 15.7rem;
+}
+
+.footer__wave {
+  height: 52px;
+  background: url("../images/bg-footer-top-mobile.svg") no-repeat 100%/100% 100%;
 }
 
 .info {
@@ -567,14 +554,18 @@ footer::before {
 
 .navbar {
   display: flex;
-  flex-flow: row no-wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   width: 85%;
   height: auto;
+  pointer-events: none;
 }
 .navbar__logo {
   width: 6rem;
+}
+.navbar__logo img {
+  vertical-align: middle;
 }
 
 .statistics__item-icon {

@@ -1,5 +1,6 @@
 .cta {
     line-height: 1.5;
+    @extend %text-align-center;
 
     &__subtitle {
         // font-size: 1.5rem;
