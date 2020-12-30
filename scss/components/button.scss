@@ -2,12 +2,23 @@
     @include button (12px, 12px, 38px, 20px);
     background-color: $pink;
     color: $very-pale-blue;
+
+    @include desktop {
+        width: 400px;
+        @include button (20px, 25px, 38px, 40px);
+    }
 }
 
 .button--secondary {
     @include button (10px, 5px, 14px, 14px);
     color: $light-pink;
     border: 1px solid;
+
+    @include desktop {
+        @include button (16px, 8px, 30px, 20px);
+        font-weight: 400;
+        border: 2px solid
+    }
 }
 
 .button--tertiary {

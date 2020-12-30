@@ -1,10 +1,17 @@
 .navbar {
     @include flex (row, nowrap, space-between, center);
     @include box-size (85%, auto);
-    pointer-events: none;
+
+    @include desktop {
+        @include box-size (90%, auto);
+    }
     
     &__logo {
         width: 6rem;
+
+        @include desktop {
+            width: 240px;
+        }
 
         img { vertical-align: middle; }
     }

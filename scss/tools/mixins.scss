@@ -19,7 +19,6 @@
     @include desktop {
         &:hover {
             cursor: pointer;
-            // background-color: $hover;
             opacity: .5;
         }
     }
