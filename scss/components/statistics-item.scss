@@ -1,35 +1,13 @@
 .statistics__item {
 
-    &-icon {
-        margin: 0 0 4px 0;
-
-        img { 
-            width: 30px;
-            @include desktop {
-                width: 48px;
-            }
-        }
-    }
-
     &-number {
         font-size: 3.8rem;
-        margin: 0 0 14px 0;
         font-weight: 700;
 
         @include desktop {
             font-size: 6rem;
         }
-
-        // &:last-of-type {
-        //     font-size: 3rem;
-        // }
     }
-    // test
-    // &:nth-child(2) {
-    //     .statistics__icon { margin-bottom: 0; }
-    //     .statistics__item-number { font-size: 3.4rem; margin-bottom: 12px; }
-    //     .statistics__item-caption { margin-top: 0; }
-    // }
 
     &-caption {
         color: #808080;
