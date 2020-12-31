@@ -1,3 +1,17 @@
+.footer-wrapper {
+    @extend %margin-lr;
+    width: 86%;
+    max-width: 1200px;
+
+    display: grid;
+    justify-content: center;
+
+    @include desktop {
+        grid-template-columns: repeat(2, 43%);
+        justify-content: space-between;
+    }
+}
+
 .footer__wave {
     height: 52px;
     background: url("../images/bg-footer-top-mobile.svg") no-repeat 100% / 100% 100%;
@@ -6,12 +20,18 @@
 .info {
     order: 2;
     margin-bottom: 1.8rem;
+    @include desktop {
+        order: 1;
+    }
 }
 
 .newsletter {
     order: 1;
     margin-top: 2.5rem;
     margin-bottom: 6.4rem;
+    @include desktop {
+        order: 2;
+    }
 }
 
 .social {

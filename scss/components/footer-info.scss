@@ -3,6 +3,10 @@
         width: 200px;
         margin-bottom: 10px;
 
+        @include desktop {
+            width: 240px;
+        }
+
         svg {
             width: 100%;
         }
@@ -16,6 +20,9 @@
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 2.55rem;
+            @include desktop {
+                width: 312px;
+            }
         }
 
         &:nth-of-type(2),
@@ -23,6 +30,9 @@
             @include flex (row, no-wrap, flex-start, center);
             margin-top: 0;
             margin-bottom: 1.1rem;
+            @include desktop {
+                font-size: 1rem;
+            }
 
             svg {
                 margin-right: 1rem;
