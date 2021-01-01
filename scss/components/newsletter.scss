@@ -1,33 +1,25 @@
 .newsletter {
     line-height: 1.7;
-    @include desktop {
-        margin-top: 0;
-    }
+    @include big-tablet { margin-top: 0; }
 
     &__subtitle {
         font-size: 1.2rem;
         text-transform: uppercase;
         margin-bottom: 14px;
-        @include desktop {
-            font-size: 1.5rem;
-            margin-top: 0;
-        }
+        @include big-tablet { margin-top: 0; }
+        @include desktop { font-size: 1.5rem; }
     }
 
     &__paragraph {
         font-size: 14px;
         font-weight: 700;
         margin-bottom: 2rem;
-        @include desktop {
-            max-width: 360px;
-        }
+        @include desktop { max-width: 360px; }
     }
 
     &__form {
         @extend %text-align-right;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        @include flex (column, nowrap, start, flex-end);
         @include desktop {
             flex-direction: row;
             justify-content: space-between;
@@ -37,10 +29,7 @@
         &-input {
             width: 100%;
             margin-bottom: 1rem;
-            @include desktop {
-                width: 60%;
-                margin-bottom: 0;
-            }
+            @include desktop { width: 60%; margin-bottom: 0; }
         }
     }
 }

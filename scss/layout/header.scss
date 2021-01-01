@@ -2,4 +2,6 @@
     @extend %margin-lr;
     margin-top: 2rem;
     margin-bottom: 7rem;
+    @include big-tablet { margin-top: 2.5rem; margin-bottom: 9.5rem; }
+    @include desktop { margin-top: 5rem; margin-bottom: 14.4rem; }
 }
