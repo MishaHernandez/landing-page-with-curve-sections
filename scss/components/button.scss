@@ -2,6 +2,7 @@
     @include button (12px, 12px, 38px, 20px);
     background-color: $pink;
     color: $very-pale-blue;
+    box-shadow: 0 4px 8px silver;
 
     @include big-tablet {
         width: 400px;
