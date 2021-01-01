@@ -15,11 +15,14 @@
     padding: $padding-tb $padding-lr;
     border-radius: $border-radius;
     @extend %text-button;
+    opacity: 1;
+    transition: opacity .5s;
 
     @include big-tablet {
         &:hover {
             cursor: pointer;
             opacity: .5;
+            transition: opacity .5s;
         }
     }
 }

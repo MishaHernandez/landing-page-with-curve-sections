@@ -20,7 +20,7 @@
     &__form {
         @extend %text-align-right;
         @include flex (column, nowrap, start, flex-end);
-        @include desktop {
+        @include big-tablet {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -29,7 +29,7 @@
         &-input {
             width: 100%;
             margin-bottom: 1rem;
-            @include desktop { width: 60%; margin-bottom: 0; }
+            @include big-tablet { width: 60%; margin-bottom: 0; }
         }
     }
 }

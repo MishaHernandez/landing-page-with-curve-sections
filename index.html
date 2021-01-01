@@ -169,5 +169,16 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    const submit = document.querySelector('.button--tertiary');
+    const email = document.querySelector('.newsletter__form-input');
+
+    submit.addEventListener('click', ()=> {
+      if (email.textContent == "") {
+        // show message below textbox
+      }
+    })
+  </script>
 </body>
 </html>

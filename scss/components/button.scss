@@ -14,9 +14,11 @@
     @include button (10px, 5px, 14px, 14px);
     color: $light-pink;
     border: 1px solid;
+    box-shadow: none;
 
     @include big-tablet {
         @include button (16px, 8px, 30px, 20px);
+        &:hover { box-shadow: 0 0 8px $light-pink; transition: box-shadow .3s, color .3s;}
         font-weight: 400;
         border: 2px solid
     }
