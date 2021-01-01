@@ -727,7 +727,7 @@ a {
   background-color: #ff52bf;
   color: #f5faff;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .button:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -741,7 +741,7 @@ a {
     border-radius: 40px;
   }
 }
-@media (min-width: 1200px) and (min-width: 1440px) {
+@media (min-width: 1200px) and (min-width: 1200px) {
   .button:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -755,7 +755,7 @@ a {
   color: #ff8fd8;
   border: 1px solid;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .button--secondary:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -770,7 +770,7 @@ a {
     border: 2px solid;
   }
 }
-@media (min-width: 1200px) and (min-width: 1440px) {
+@media (min-width: 1200px) and (min-width: 1200px) {
   .button--secondary:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -785,7 +785,7 @@ a {
   color: #f5faff;
   border-style: none;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .button--tertiary:hover {
     cursor: pointer;
     opacity: 0.5;
